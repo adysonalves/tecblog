@@ -1,0 +1,14 @@
+@media screen and (max-width: 773px) {
+    main .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .container section.posts{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+}
