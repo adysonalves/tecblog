@@ -21,6 +21,12 @@ const home = require('./routes/routesFront')
 // ROTAS
 app.use('/', home);
 
+
+// TRATA ERRO 404
+app.use((req, res, next) => {
+    res.status(404).render('404', {title: 'Página não encontrada!', css: 'estilo'})
+})
+
 app.listen(PORT, () => {
     console.log('Servidor rodando na porta 3000')
 })

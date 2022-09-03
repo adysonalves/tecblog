@@ -191,7 +191,7 @@ aside>.categorias>a:hover{
 }
 
 
-
+/* FIM DO MAIN */
 
 footer {
     width: 100%;
@@ -206,6 +206,27 @@ footer>.container {
 footer>.container>span{
 
 }
+
+section.page-error .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+}
+
+section.page-error .container>span.error {
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--cor-textos);
+}
+
+section.page-error .container>span.info-error {
+    font-size: 1.5rem;
+    color: var(--cor-textos);
+    font-weight: 500;
+}
+
 
 
 
