@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 app.use(express.json());
@@ -15,6 +16,14 @@ app.engine('hbs', hbs.engine({
 
 // IMPORTA ROTA
 const home = require('./routes/routesFront')
+
+// BANCO DE DADOS
+const {Sequelize, sequelize} = require('./src/database/db');
+
+// MODELOS BD
+const Post = require('./src/models/Posts')
+const Categoria = require('./src/models/Categoria')
+
 
 //MIDDLEWARES
 
