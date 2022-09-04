@@ -1,0 +1,36 @@
+<main class="container">
+
+    {{>sidebarPainel}}
+
+    <section class="dashboard">
+
+        <h2>Novo post</h2>
+
+        <form action="/painel/novo-post" method="post">
+
+            <div class="row">
+                <label for="titulo">Titulo do post</label>
+                <input type="text" name="titulo" id="titulo" required>
+            </div>
+
+            <div class="row">
+                <label for="conteudo">Conteúdo</label>
+               <textarea name="conteudo" id="conteudo" spellcheck="true" required></textarea>
+            </div>
+
+            <div class="row">
+                <label for="categoria">Categorias</label>
+                <select name="categoria" id="categoria" required>
+                    <option value="" selected disabled>Selecione...</option>
+                    {{#each categorias}}
+                    <option value="{{id}}">{{descricao}}</option>
+                    {{/each}}
+                </select>
+            </div>
+
+            <button type="submit">Postar</button>
+
+        </form>
+
+    </section>
+</main>

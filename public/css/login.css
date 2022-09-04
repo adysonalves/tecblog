@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root{
+    --cor-orange: #F86624;
+    --cor-roxo: #662E9B;
+    --cor-azul: #43BCCD;
+    --cor-textos: #4E4E4E;
+    --fonte-padrao: 'Roboto Condensed', sans-serif;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #fff;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+main.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+main.container p {
+    display: block;
+    width: 320px;
+    padding: 10px;
+    background-color: #df6d6d;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+div.box-login{
+    padding: 25px;
+    width: 320px;
+    border: 1px solid #c3c4c7;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
+
+}
+
+div.box-login h2 {
+    text-align: center;
+    font-weight: 600;
+    color: var(--cor-textos);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+div.box-login form{
+    width: 100%;
+}
+
+div.box-login form .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+div.box-login form .row>label {
+    font-size: 1.2rem;
+    color: var(--cor-textos);
+}
+
+div.box-login form .row>input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+}
+
+div.box-login form .row>input:focus {
+    border: 2px solid #1c7bff;
+}
+
+div.box-login form button {
+    margin-top: 15px;
+    background-color: #1c7bff;
+    padding: 10px;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+div.box-login form button:hover {
+    cursor: pointer;
+}

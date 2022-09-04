@@ -2,16 +2,13 @@
     <div class="container">
 
         <section class="posts">
-            {{#each posts}}
             <article class="post">
-                <h2><a href="/post/{{id}}">{{titulo}}</a></h2>
+                <h2>{{titulo}}</h2>
                 <span class="date-post">{{createdAt}}</span>
 
-                <p class="resume">{{conteudo}}</p>
+                <p>{{conteudo}}</p>
 
-                <a href="/post/{{id}}"><button>Ler mais</button></a>
             </article>
-            {{/each}}
 
         </section>
 

@@ -9,12 +9,25 @@
     <title>TecBlog! - {{title}}</title>
 </head>
 <body>
+    {{#if logado}}
+    {{>navbar}}
+    {{/if}}
+
+    {{#if home}}
     {{>header}}
+    {{/if}}
 
     {{{body}}}
 
+    {{#if home}}
     {{>footer}}
+    {{/if}}
     
+    <script
+      src="/js/moment.min.js"
+    ></script>
+
     <script src="/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/d4268a8639.js" crossorigin="anonymous"></script>
 </body>
 </html>

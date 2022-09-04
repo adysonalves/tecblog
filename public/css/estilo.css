@@ -27,6 +27,30 @@ body{
 
 /* CABEÇALHO DO SITE */
 
+div.navbar {
+    background-color: #d35921;
+    width: 100%;
+}
+
+div.navbar .container {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 25px;
+}
+
+
+div.navbar-links a:link, div.navbar-links a:active, div.navbar-links a:visited{
+    padding: 10px;
+    color: rgb(255 255 255 / 60%);
+    text-decoration: none;
+}
+
+div.navbar-links a:hover{
+    color: #fff
+}
+
 header.topo {
     width: 100%;
     height: 150px;
@@ -95,12 +119,21 @@ main .container section.posts article {
     background-color: #fff;
     border-radius: 5px;
     margin-bottom: 15px;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
 }
 
-main .container section.posts article>h2 {
+main .container section.posts article>h2{
     font-size: 1.8rem;
     color: var(--cor-orange);
     font-weight: 600;
+    text-decoration: none;
+}
+
+main .container section.posts article>h2 a{
+    font-size: 1.8rem;
+    color: var(--cor-orange);
+    font-weight: 600;
+    text-decoration: none;
 }
 
 main .container section.posts article>span {
@@ -119,15 +152,17 @@ main .container section.posts article>p {
     font-size: 1.2rem;
     text-align: justify;
     margin: 5px 0 20px 0;
+    width: 100%;
 }
 
-main .container section.posts article>button {
+main .container section.posts article>a button {
     padding: 10px 15px;
     font-family: var(--fonte-padrao);
     background-color: var(--cor-orange);
     border: 0;
     border-radius: 5px;
     color: #fff;
+    cursor: pointer;
 }
 
 aside{
@@ -150,14 +185,17 @@ aside>.posts-recentes>h3, aside>.categorias h3{
     font-size: 1.5rem;
 }
 
-aside>.posts-recentes>h4 {
+aside>.posts-recentes>h4 a{
     font-size: 1rem;
     margin-bottom: 2px;
+    color: #fff;
+    text-decoration: none;
 }
 
 aside>.posts-recentes>p {
     font-size: 1rem;
     color: rgb(255 255 255 / 60%);
+    margin-top: 3px;
 }
 
 aside>.posts-recentes>hr {
@@ -203,9 +241,6 @@ footer>.container {
     text-align: center;
 }
 
-footer>.container>span{
-
-}
 
 section.page-error .container {
     display: flex;

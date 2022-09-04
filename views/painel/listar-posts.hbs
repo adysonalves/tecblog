@@ -1,0 +1,44 @@
+<main class="container">
+
+    {{>sidebarPainel}}
+
+    <section class="dashboard">
+
+       <h2>Todos os posts</h2>
+        {{#if table}}
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each posts}}
+                <tr>
+                    <td>{{titulo}}</td>
+                    <td class="action">
+
+                    <form action="/painel/editar-post" method="post">
+                    <input type="hidden" name="id" value="{{id}}">
+                    <button type="submit"><i class="fa-regular fa-pen-to-square"></i></button>
+                    </form>
+
+                    <form action="/painel/del-post" method="post">
+                    <input type="hidden" name="id" value="{{id}}">
+                    <button type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                    </form>
+                        
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+
+        </table>
+        {{else}}
+        <p>Você ainda não realizou nenhuma postagem.</p>
+        {{/if}}
+
+    </section>
+</main>

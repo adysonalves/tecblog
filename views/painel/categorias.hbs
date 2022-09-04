@@ -1,0 +1,21 @@
+<main class="container">
+
+    {{>sidebarPainel}}
+
+    <section class="dashboard">
+
+        <h2>Categorias</h2>
+
+        <form action="/painel/nova-categoria" method="post">
+
+            <div class="row">
+                <label for="descricao">Titulo categoria</label>
+                <input type="text" name="descricao" id="descricao" required>
+            </div>
+
+            <button type="submit">Adicionar</button>
+
+        </form>
+
+    </section>
+</main>

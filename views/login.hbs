@@ -1,0 +1,27 @@
+<main class="container">
+    {{#if info}}
+    <p>{{info}}</p>
+    {{else}}
+    {{/if}}
+    <div class="box-login">
+
+        <h2>Fazer login</h2>
+
+        <form action="/login" method="post">
+
+        <div class="row">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="seuemail@email.com" required>
+        </div>
+
+        <div class="row">
+            <label for="senha">Senha</label>
+            <input type="password" name="passwd" id="senha" placeholder="*********" required>
+        </div>
+
+        <button type="submit">Acessar</button>
+
+        </form>
+
+    </div>
+</main>
